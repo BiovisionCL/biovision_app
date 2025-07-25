@@ -5,7 +5,7 @@ final ThemeData appTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
   fontFamily: 'Lato',
   textTheme: const TextTheme(
-    headline6: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.black87),
+    titleLarge: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.black87),
   ),
   appBarTheme: const AppBarTheme(
     backgroundColor: Colors.white,
