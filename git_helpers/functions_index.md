@@ -1,27 +1,16 @@
 # Índice de funciones git_helpers
+Este documento contiene una lista de funciones disponibles en la carpeta git_helpers,
+con su descripción breve y el archivo donde están definidas.
 
-Esta es la lista de funciones disponibles para el manejo automático de git en el proyecto.
-
----
-
-## Funciones disponibles:
-
-### run_cmd(cmd_list)
-- Ejecuta un comando shell en el repositorio.
-- Uso: `run_cmd(["git", "status"])`
-
-### git_add()
-- Ejecuta `git add .` para agregar todos los cambios.
-
-### git_commit(message)
-- Ejecuta `git commit -m "message"` para hacer commit con mensaje.
-
-### git_push(remote="origin", branch="main")
-- Realiza push al repositorio remoto y rama especificada.
-
-### git_create_tag(tag_name, message)
-- Crea un tag anotado con mensaje y lo sube al repositorio remoto.
+## Función `run_cmd`
+- Archivo: `run_cmd_function.py`
+- Descripción: Ejecuta un comando del sistema en la carpeta del repositorio. Recibe lista de argumentos del comando, imprime debug con stdout y stderr, y retorna True/False según éxito.
 
 ---
 
-Los archivos fuente están en la carpeta `git_helpers/` para facilitar su mantenimiento y extensión.
+## Función `git_add_commit_push`
+- Archivo: `git_add_commit_push.py`
+- Descripción: Realiza git add ., git commit con mensaje dado y git push origin main. Muestra información de cada paso, con manejo de errores.
+
+---
+

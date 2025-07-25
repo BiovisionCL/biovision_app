@@ -1,7 +1,21 @@
-# Metadata Commit 84805a974cde5be12b6008308694cef3dc571844
-- **Mensaje:** [FEATURE] Agregado módulo de autenticación
-- **Fecha:** Fri Jul 25 18:00:05 2025 -0400
-- **Autor:** Fernando Fuentes-Peñailillo
-- **Archivos modificados:**
-  - commit_metadata.md
-  - tag_v1.0.0_metadata.md
+# Metadata Commit 5071317465f2ee7a45cd59ca34e4b50124e99651
+
+**Autor:** Fernando Fuentes-Peñailillo
+
+**Fecha:** Fri Jul 25 18:16:54 2025 -0400
+
+**Mensaje:** Mensaje de commit de prueba
+
+**Archivos modificados:**
+- commit_metadata.md
+- git_helpers/functions_index.md
+- git_helpers/git_add_function.py
+- git_helpers/git_commit_function.py
+- git_helpers/git_push_function.py
+- git_helpers/git_tag_function.py
+- git_helpers/run_cmd_function.py
+- lib/core/widgets/primary_button.dart
+- lib/features/home/presentation/home_page.dart
+- lib/main.dart
+- test/core/widgets/primary_button_test.dart
+- test/features/home/presentation/home_page_test.dart
