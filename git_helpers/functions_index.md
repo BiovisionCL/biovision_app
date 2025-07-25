@@ -1,9 +1,8 @@
 # Índice de Funciones
 
-Este archivo contiene un índice automatizado de todas las funciones encontradas en el proyecto, con su archivo correspondiente.
+Índice automatizado de funciones en el proyecto.
 
 | Función | Descripción | Archivo |
-
 |---------|-------------|---------|
 | `_onButtonPressed` | Función detectada automáticamente | `lib/features/home/presentation/home_page.dart` |
 | `build` | Función detectada automáticamente | `lib/core/widgets/footer.dart` |
