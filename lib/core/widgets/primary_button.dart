@@ -1,18 +1,17 @@
 
 import 'package:flutter/material.dart';
 
-/// PrimaryButton es un widget reusable para botones principales.
 class PrimaryButton extends StatelessWidget {
-  final String label;
+  final String text;
   final VoidCallback onPressed;
 
-  const PrimaryButton({Key? key, required this.label, required this.onPressed}) : super(key: key);
+  const PrimaryButton({required this.text, required this.onPressed, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: Text(label),
+      child: Text(text),
     );
   }
 }
