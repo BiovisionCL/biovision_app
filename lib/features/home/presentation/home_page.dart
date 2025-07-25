@@ -7,17 +7,32 @@ class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   void onExpressPressed() {
-    // Define acción cuando el botón sea presionado
+    // Acción del botón Biovision Express
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const Navbar(),
-      body: Center(
-        child: PrimaryButton(
-          label: 'Biovision Express',
-          onPressed: onExpressPressed,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'Bienvenido a Biovision',
+              style: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFF0B3D91),
+              ),
+            ),
+            const SizedBox(height: 24),
+            PrimaryButton(
+              label: 'Biovision Express',
+              onPressed: onExpressPressed,
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: const Footer(),
