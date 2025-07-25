@@ -1,4 +1,3 @@
+# Biovision App - Modular Flutter Project
 
-# Biovision App
-
-Aplicación Flutter base para Biovision, con tema premium y estructura inicial.
+Estructura modular, escalable y ordenada para facilitar el desarrollo y mantenimiento.

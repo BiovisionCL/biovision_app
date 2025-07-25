@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
-import 'theme.dart';
+import 'shared/theme.dart';
+import 'features/home/presentation/home_page.dart';
 
 void main() {
   runApp(const BiovisionApp());
@@ -12,16 +12,9 @@ class BiovisionApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Biovision',
+      title: 'Biovision Modular',
       theme: appTheme,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Biovision Premium'),
-        ),
-        body: const Center(
-          child: Text('Bienvenido a Biovision', style: TextStyle(fontSize: 24)),
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }
