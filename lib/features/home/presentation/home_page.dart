@@ -1,41 +1,34 @@
 import 'package:flutter/material.dart';
-import '../../../core/widgets/navbar.dart';
-import '../../../core/widgets/footer.dart';
 import '../../../core/widgets/primary_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
-  void onExpressPressed() {
-    // Acción del botón Biovision Express
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const Navbar(),
+      appBar: AppBar(
+        title: const Text('Biovision'),
+      ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
               'Bienvenido a Biovision',
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFF0B3D91),
-              ),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 20),
             PrimaryButton(
-              label: 'Biovision Express',
-              onPressed: onExpressPressed,
+              text: 'Biovision Express',
+              onPressed: () {
+                // Acción para el botón
+              },
             ),
           ],
         ),
       ),
-      bottomNavigationBar: const Footer(),
     );
   }
 }

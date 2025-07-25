@@ -1,20 +1,21 @@
+
 import 'package:flutter/material.dart';
-import 'shared/theme.dart';
-import 'features/home/presentation/home_page.dart';
 
 void main() {
-  runApp(const BiovisionApp());
+  runApp(const MyApp());
 }
 
-class BiovisionApp extends StatelessWidget {
-  const BiovisionApp({Key? key}) : super(key: key);
-
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Biovision Modular',
-      theme: appTheme,
-      home: const HomePage(),
+      title: 'Biovision Web Test',
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Biovision Web Test')),
+        body: const Center(child: Text('Flutter Web Running')),
+      ),
     );
   }
 }
