@@ -11,4 +11,4 @@
 | `build` | Función detectada automáticamente | `lib/features/home/presentation/home_page.dart` |
 | `build` | Función detectada automáticamente | `lib/main.dart` |
 | `build` | Función detectada automáticamente | `lib/widgets/primary_button.dart` |
-| `main` | Función detectada automáticamente | `lib/main.dart` |
+| `main` | Función detectada automáticamente | `lib/main.dart` || build | Método build básico para PrimaryButton widget | `lib/core/widgets/primarybutton.dart` |
