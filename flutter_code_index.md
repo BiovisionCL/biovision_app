@@ -1,0 +1,1 @@
+- `lib/core/widgets/primary_button.dart`: Widget reusable PrimaryButton con test básico.
