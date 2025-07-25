@@ -16,12 +16,13 @@ class PrimaryButton extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         backgroundColor: const Color(0xFF0B3D91),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 28),
+        elevation: 5,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
       ),
       child: Text(
         label,
-        style: const TextStyle(fontSize: 18, color: Colors.white),
+        style: const TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.w600),
       ),
     );
   }

@@ -10,25 +10,28 @@ class Navbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: const Color(0xFF0B3D91),
+      elevation: 4,
       title: const Text(
         'Biovision Express',
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 24,
           letterSpacing: 1.2,
+          color: Colors.white,
         ),
       ),
       centerTitle: true,
       actions: [
         TextButton(
           onPressed: () {
-            // Acción para botón principal
+            // Acción para botón Inicio
           },
           child: const Text(
             'Inicio',
             style: TextStyle(color: Colors.white, fontSize: 16),
           ),
         ),
+        // Puedes agregar más botones aquí si quieres
       ],
     );
   }
