@@ -1,29 +1,47 @@
-from run_cmd_function import run_cmd
+import subprocess
+import os
 
-def git_add_commit_push(commit_message: str) -> bool:
+REPO_PATH = os.path.expanduser("/Users/fernandofuentes/biovision_app")
+
+def run_cmd(cmd_list):
     """
-    Ejecuta git add ., commit y push en el repo definido en run_cmd_function.
-
-    Args:
-        commit_message (str): Mensaje para el commit.
-
-    Returns:
-        bool: True si todo fue exitoso, False si falló alguna etapa.
+    Ejecuta un comando del sistema en la carpeta del repositorio.
     """
-    print("[INFO] Ejecutando git add .")
+    try:
+        print(f"[DEBUG] Ejecutando comando: {' '.join(cmd_list)}")
+        result = subprocess.run(
+            cmd_list,
+            cwd=REPO_PATH,
+            text=True,
+            capture_output=True,
+            check=True,
+        )
+        if result.stdout.strip():
+            print(f"[STDOUT] {result.stdout.strip()}")
+        if result.stderr.strip():
+            print(f"[STDERR] {result.stderr.strip()}")
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"[ERROR] Error ejecutando comando: {e}")
+        print(f"[STDOUT] {e.stdout}")
+        print(f"[STDERR] {e.stderr}")
+        return False
+
+def git_add_commit_push(commit_message):
+    """
+    Ejecuta git add, commit y push para el repositorio configurado.
+    """
+    # git add .
     if not run_cmd(["git", "add", "."]):
         print("[ERROR] git add falló.")
         return False
 
-    print(f"[INFO] Ejecutando git commit -m ''")
+    # git commit -m "mensaje"
     if not run_cmd(["git", "commit", "-m", commit_message]):
-        print("[WARN] git commit falló (posiblemente sin cambios). Continuando.")
-        # Aquí puedes decidir si quieres devolver False o True si no hay cambios
-        # Return True para continuar sin commit, o False para detener
-        # Por ahora, devolvemos True para no detener el flujo
-        return True
+        print("[WARN] No hay cambios para commitear o commit vacío.")
+        # No retornamos False porque push puede ser necesario igualmente
 
-    print("[INFO] Ejecutando git push origin main")
+    # git push origin main
     if not run_cmd(["git", "push", "origin", "main"]):
         print("[ERROR] git push falló.")
         return False
