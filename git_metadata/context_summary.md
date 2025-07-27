@@ -1,38 +1,40 @@
 # Contexto y Estado del Proyecto biovision_app
-Fecha: 2025-07-27 12:23:22
+Fecha: 2025-07-27 12:35:09
 
 Repositorio oficial: git@github.com:BiovisionCL/biovision_app.git
 
 ## Estado actual
-- Tests unitarios para PrimaryButton exitosos.
-- Tests Counter increments con fallos pendientes por corregir.
-- Errores de Directionality en tests corregidos.
-- Código desarrollado para integración de pruebas y scripts maestro git.
-- Flujo de trabajo automatizado en Jupyter Notebook.
+- Tests unitarios PrimaryButton: OK.
+- Tests Counter increments: Fallos pendientes.
+- Errores Directionality corregidos.
+- Código maestro git integrado.
+- Flujo de trabajo automático desde Jupyter Notebook.
 
 ## Archivos críticos
 - test/core/widgets/primary_button_test.dart
 - test/core/widgets/primarybutton_test.dart
 - test/features/home/presentation/home_page_test.dart
 - test/widget_test.dart
-- git_helpers/git_master.py (script maestro git)
+- git_helpers/git_master.py
 - git_metadata/context_summary.md (este archivo)
 
-## Protocolo de migración
-1. Clonar o actualizar repositorio:  
-   `git clone git@github.com:BiovisionCL/biovision_app.git`  
-   o  
-   `git pull origin main`
+## Protocolo migración:
+1. Clonar/actualizar repo:
+   git clone git@github.com:BiovisionCL/biovision_app.git
+   o
+   git pull origin main
 
-2. Ejecutar script maestro git_master.py para sincronización, commits y tags.
+2. Ejecutar script maestro:
+   python git_helpers/git_master.py
 
-3. Ejecutar pruebas unitarias con `flutter test` y validar resultados.
+3. Ejecutar tests:
+   flutter test
 
-4. Revisar el archivo `git_metadata/context_summary.md` para contexto actualizado.
+4. Leer contexto en git_metadata/context_summary.md
 
-5. Usar el prompt inicial para que la nueva ventana de ChatGPT cargue y comprenda todo el contexto y proyecto.
+5. Usar prompt inicial para ventana ChatGPT nueva (generado automáticamente).
 
 ---
 
-**NOTA:** Mantener siempre actualizado este archivo cada vez que se migre o haya cambios importantes.
+**IMPORTANTE:** Mantener actualizado este archivo antes de cerrar o migrar.
 
