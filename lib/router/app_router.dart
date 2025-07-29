@@ -9,26 +9,26 @@ import '../features/login/login_page.dart';
 class AppRouter {
   static final GoRouter router = GoRouter(
     routes: [
-      GoRoute(
+//       GoRoute(
         path: '/',
         builder: (context, state) => const HomePage(),
       ),
-      GoRoute(
+//       GoRoute(
         path: '/quienes-somos',
-        builder: (context, state) => const AboutPage(),
-      ),
-      GoRoute(
+//         builder: (context, state) => const AboutPage(),
+//       ),
+//       GoRoute(
         path: '/servicios',
-        builder: (context, state) => const ServicesPage(),
-      ),
-      GoRoute(
+//         builder: (context, state) => const ServicesPage(),
+//       ),
+//       GoRoute(
         path: '/contacto',
-        builder: (context, state) => const ContactPage(),
-      ),
-      GoRoute(
+//         builder: (context, state) => const ContactPage(),
+//       ),
+//       GoRoute(
         path: '/login',
-        builder: (context, state) => const LoginPage(),
-      ),
+//         builder: (context, state) => const LoginPage(),
+//       ),
     ],
   );
 }
