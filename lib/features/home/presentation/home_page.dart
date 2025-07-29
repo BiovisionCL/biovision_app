@@ -1,55 +1,57 @@
 import 'package:flutter/material.dart';
-import '../../../core/widgets/navbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final styleTitle = Theme.of(context).textTheme.headlineMedium?.copyWith(
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        );
+    final styleSubtitle = Theme.of(context).textTheme.bodyLarge?.copyWith(
+          fontSize: 16,
+          color: Colors.white70,
+        );
+
     return Scaffold(
-      appBar: const Navbar(),
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Image.network(
-            'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?fit=crop&w=1400&q=80',
+          Image.asset(
+            'assets/images/variabilidad_espacial.jpg',
             fit: BoxFit.cover,
             color: Colors.black.withOpacity(0.5),
             colorBlendMode: BlendMode.darken,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 64),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 80),
+            alignment: Alignment.centerLeft,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   'Datos que transforman decisiones agrícolas en resultados productivos',
-                  style: TextStyle(
-                    fontSize: 36,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
+                  style: styleTitle,
                 ),
                 const SizedBox(height: 16),
-                const Text(
+                Text(
                   'Soluciones inteligentes en agricultura de precisión, desde el terreno hasta la nube.',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white70,
-                  ),
+                  style: styleSubtitle,
                 ),
                 const SizedBox(height: 32),
                 ElevatedButton(
-                  onPressed: () {
-                    // Acción futura para Clima Express
-                  },
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.black,
                     backgroundColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
-                    textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    foregroundColor: Colors.black,
+                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
                   ),
+                  onPressed: () {
+                    // Navegación futura
+                  },
                   child: const Text('Explora Clima Express'),
                 ),
               ],
