@@ -1,3 +1,4 @@
+import '../../../core/config/config.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -19,6 +20,7 @@ class HomePage extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
+            AppConfig.backgroundImageHome,
             'assets/images/variabilidad_espacial.jpg',
             fit: BoxFit.cover,
             color: Colors.black.withOpacity(0.5),
