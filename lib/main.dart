@@ -1,3 +1,4 @@
+import 'core/config/theme_config.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'features/home/presentation/home_page.dart';
@@ -11,7 +12,8 @@ class BiovisionApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(theme: ThemeConfig.lightTheme,
+    
       title: 'Biovision',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
