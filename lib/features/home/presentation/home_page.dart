@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/widgets/navbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -6,11 +7,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const Navbar(),
       body: Stack(
         fit: StackFit.expand,
         children: [
           Image.network(
-            'https://images.unsplash.com/photo-1568605114967-8130f3a36994?fit=crop&w=1400&q=80',
+            'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?fit=crop&w=1400&q=80',
             fit: BoxFit.cover,
             color: Colors.black.withOpacity(0.5),
             colorBlendMode: BlendMode.darken,
