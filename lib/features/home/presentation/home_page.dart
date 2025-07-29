@@ -9,8 +9,8 @@ class HomePage extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            'assets/images/biovision_background.jpg',
+          Image.network(
+            'https://images.unsplash.com/photo-1568605114967-8130f3a36994?fit=crop&w=1400&q=80',
             fit: BoxFit.cover,
             color: Colors.black.withOpacity(0.5),
             colorBlendMode: BlendMode.darken,
