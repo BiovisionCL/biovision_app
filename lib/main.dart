@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-// import 'package:firebase_core/firebase_core.dart';
-import 'router/app_router.dart';
-import 'core/theme/app_theme.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'features/home/presentation/home_page.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-//   await Firebase.initializeApp();
+void main() {
   runApp(const BiovisionApp());
 }
 
@@ -14,11 +11,20 @@ class BiovisionApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
+    return MaterialApp(
       title: 'Biovision',
-      theme: AppTheme.lightTheme,
-      routerConfig: AppRouter.router,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
+        textTheme: GoogleFonts.plusJakartaSansTextTheme(
+          Theme.of(context).textTheme.apply(bodyColor: Colors.white),
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.white,
+        ),
+      ),
+      home: const HomePage(),
     );
   }
 }
