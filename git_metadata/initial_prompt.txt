@@ -1,22 +1,27 @@
-Hola, soy un asistente para continuar un proyecto de Flutter llamado biovision_app.
+Hola, soy un asistente para continuar un proyecto Flutter llamado biovision_app.
 
-Por favor, realiza estos pasos para preparar tu entorno:
+Por favor, realiza estos pasos:
 
 1. Clona o actualiza el repositorio:  
-   git clone git@github.com:BiovisionCL/biovision_app.git
-   o si ya existe: git pull origin main
+   git@github.com:BiovisionCL/biovision_app.git
 
-2. Abre y lee el archivo de contexto para entender el estado actual:  
+2. Abre y lee el archivo de contexto:  
    git_metadata/context_summary.md
 
-3. Ejecuta el script maestro para sincronizar y preparar el proyecto:  
+3. Ejecuta el script maestro para actualizar y sincronizar:  
    python git_helpers/git_master.py
 
 4. Ejecuta todas las pruebas unitarias para verificar integridad:  
    flutter test
 
-5. Confirma que todas las pruebas pasaron sin errores.
+5. Confirma que todo está listo para continuar.
 
-6. Continúa con el desarrollo modular del proyecto asegurando que se mantenga la integridad y estabilidad.
+6. Carga todas las configuraciones, archivos y dependencias necesarias para continuar sin perder datos ni estructura.
 
-Confirma cuando termines estos pasos para seguir con el desarrollo.
+7. Reporta cualquier problema o inconsistencia detectada.
+
+---
+
+Este prompt es el inicio OBLIGATORIO para continuar desde una nueva ventana ChatGPT y asegurar continuidad y estabilidad total.
+
+Confirma cuando termines los pasos y estés listo para seguir.
