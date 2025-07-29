@@ -1,5 +1,5 @@
 # Contexto del proyecto biovision_app
-Fecha: 2025-07-29 12:15:47
+Fecha: 2025-07-29 15:27:12
 Repositorio oficial: git@github.com:BiovisionCL/biovision_app.git
 
 ## Dependencias (extracto pubspec.yaml, máximo 1000 caracteres):
@@ -33,3 +33,7 @@ flutter:
 - test/core/widgets/primarybutton_test.dart: Sí
 - test/features/home/presentation/home_page_test.dart: Sí
 - test/widget_test.dart: Sí
+
+
+## Exportación automática
+Fecha: 2025-07-29 15:45:51
