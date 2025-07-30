@@ -5,7 +5,7 @@ class ThemeConfig {
     return ThemeData(
       primarySwatch: Colors.teal,
       scaffoldBackgroundColor: Colors.white,
-      fontFamily: 'Inter',
+      fontFamily: 'sans-serif',
       textTheme: const TextTheme(
         headlineLarge: TextStyle(
           fontSize: 36,
@@ -26,7 +26,7 @@ class ThemeConfig {
         backgroundColor: Colors.white,
         elevation: 0,
         titleTextStyle: TextStyle(
-          fontFamily: 'Inter',
+          fontFamily: 'sans-serif',
           fontWeight: FontWeight.bold,
           fontSize: 22,
           color: Colors.black87,

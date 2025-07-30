@@ -1,6 +1,4 @@
-import 'core/config/theme_config.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'features/home/presentation/home_page.dart';
 
 void main() {
@@ -12,19 +10,11 @@ class BiovisionApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: ThemeConfig.lightTheme,
-    
+    return MaterialApp(
       title: 'Biovision',
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.black,
-        textTheme: GoogleFonts.plusJakartaSansTextTheme(
-          Theme.of(context).textTheme.apply(bodyColor: Colors.white),
-        ),
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
-        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        useMaterial3: true,
       ),
       home: const HomePage(),
     );

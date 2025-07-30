@@ -1,26 +1,17 @@
 name: biovision_app
-description: Proyecto Flutter modular Biovision
+description: Proyecto Flutter para Biovision.
 publish_to: "none"
+
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.19.0 <3.0.0"
+  sdk: ">=3.1.0 <4.0.0"
 
 dependencies:
-  go_router: ^13.0.1
-  google_fonts: ^6.2.1
   flutter:
-  fonts:
-    - family: Inter
-      fonts:
-        - asset: assets/fonts/Inter-Regular.ttf
-        - asset: assets/fonts/Inter-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Inter-Italic.ttf
-          style: italic
     sdk: flutter
   cupertino_icons: ^1.0.2
-  provider: ^6.0.5
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   flutter_test:
@@ -29,6 +20,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  assets:
-    - assets/images/

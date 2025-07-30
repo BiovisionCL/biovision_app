@@ -1,42 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
-class Navbar extends StatelessWidget implements PreferredSizeWidget {
+class Navbar extends StatelessWidget {
   const Navbar({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      backgroundColor: Colors.black.withOpacity(0.7),
-      elevation: 0,
-      title: const Text(
-        'Biovision',
-        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-      ),
-      actions: [
-        _navItem(context, 'Inicio', '/'),
-        _navItem(context, 'Quiénes Somos', '/quienes-somos'),
-        _navItem(context, 'Servicios', '/servicios'),
-        _navItem(context, 'Asesores', '/asesores'),
-        _navItem(context, 'Casos de Éxito', '/casos'),
-        _navItem(context, 'Contacto', '/contacto'),
-        _navItem(context, 'Login', '/login'),
-      ],
-    );
-  }
-
-  Widget _navItem(BuildContext context, String title, String route) {
-    return TextButton(
-      onPressed: () {
-        context.go(route);
-      },
-      child: Text(
-        title,
-        style: const TextStyle(color: Colors.white, fontSize: 16),
+    return Container(
+      height: 60,
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      color: Colors.white.withOpacity(0.95),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          const Text("RAZONBILL", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+          Row(
+            children: [
+              TextButton(onPressed: () {}, child: const Text("Inicio")),
+              TextButton(onPressed: () {}, child: const Text("Quiénes Somos")),
+              TextButton(onPressed: () {}, child: const Text("Servicios")),
+              TextButton(onPressed: () {}, child: const Text("Casos de Éxito")),
+              TextButton(onPressed: () {}, child: const Text("Contacto")),
+              ElevatedButton(onPressed: () {}, child: const Text("Ingresar")),
+            ],
+          ),
+        ],
       ),
     );
   }
-
-  @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

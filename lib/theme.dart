@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 final ThemeData appTheme = ThemeData(
   primaryColor: const Color(0xFF0B3D91),
   scaffoldBackgroundColor: Colors.white,
-  fontFamily: 'Lato',
+  fontFamily: 'sans-serif',
   textTheme: const TextTheme(
     titleLarge: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.black87),
   ),

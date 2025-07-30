@@ -1,0 +1,18 @@
+name: biovision_app
+description: Proyecto Flutter modular Biovision
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+dependencies:
+  go_router: ^13.0.1
+flutter:
+  fonts:
+    - family: Barlow
+      fonts:
+        - asset: assets/fonts/Barlow-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Barlow-Bold.ttf
+          weight: 700
+    - family: Barlow
+    - family: Barlow

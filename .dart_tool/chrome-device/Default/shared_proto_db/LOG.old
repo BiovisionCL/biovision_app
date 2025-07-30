@@ -1,3 +1,7 @@
-2025/07/25-17:14:21.514 973b48 Reusing MANIFEST /private/var/folders/4f/6sr7_s451c9041bmjn88_ndh0000gn/T/flutter_tools.hXSYD7/flutter_tools_chrome_device.UhrLN1/Default/shared_proto_db/MANIFEST-000001
-2025/07/25-17:14:21.514 973b48 Recovering log #3
-2025/07/25-17:14:21.514 973b48 Reusing old log /private/var/folders/4f/6sr7_s451c9041bmjn88_ndh0000gn/T/flutter_tools.hXSYD7/flutter_tools_chrome_device.UhrLN1/Default/shared_proto_db/000003.log 
+2025/07/29-23:18:03.455 c4dd25 Reusing MANIFEST /private/var/folders/4f/6sr7_s451c9041bmjn88_ndh0000gn/T/flutter_tools.lwr6io/flutter_tools_chrome_device.QaeTD7/Default/shared_proto_db/MANIFEST-000001
+2025/07/29-23:18:03.456 c4dd25 Recovering log #4
+2025/07/29-23:18:03.456 c4dd25 Reusing old log /private/var/folders/4f/6sr7_s451c9041bmjn88_ndh0000gn/T/flutter_tools.lwr6io/flutter_tools_chrome_device.QaeTD7/Default/shared_proto_db/000004.log 
+2025/07/29-23:18:03.457 c4dd25 Delete type=0 #3
+2025/07/29-23:18:15.695 c4dd25 Level-0 table #8: started
+2025/07/29-23:18:15.699 c4dd25 Level-0 table #8: 126338 bytes OK
+2025/07/29-23:18:15.702 c4dd25 Delete type=0 #4
