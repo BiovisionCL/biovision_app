@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'package:biovision_app/core/widgets/background_image.dart';
+import 'package:biovision_app/core/widgets/navigation_bar.dart';
+import 'package:biovision_app/core/widgets/footer.dart';
+import 'package:biovision_app/features/home/presentation/widgets/home_content.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Stack(
+        children: [
+          BackgroundImage(),
+          Column(
+            children: [
+              NavigationBar(),
+              Expanded(child: HomeContent()),
+              Footer(),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}

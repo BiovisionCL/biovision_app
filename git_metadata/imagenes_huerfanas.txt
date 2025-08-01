@@ -1,0 +1,3 @@
+⚠️ Imágenes huérfanas detectadas:
+- biovision_background.jpg
+- razorbill_logo.jpg

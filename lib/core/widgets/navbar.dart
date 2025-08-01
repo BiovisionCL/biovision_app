@@ -1,28 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Navbar extends StatelessWidget {
-  const Navbar({super.key});
-
+class CustomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 60,
-      padding: const EdgeInsets.symmetric(horizontal: 24),
-      color: Colors.white.withOpacity(0.95),
+      color: Colors.blueGrey[900],
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Text("RAZONBILL", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-          Row(
-            children: [
-              TextButton(onPressed: () {}, child: const Text("Inicio")),
-              TextButton(onPressed: () {}, child: const Text("Quiénes Somos")),
-              TextButton(onPressed: () {}, child: const Text("Servicios")),
-              TextButton(onPressed: () {}, child: const Text("Casos de Éxito")),
-              TextButton(onPressed: () {}, child: const Text("Contacto")),
-              ElevatedButton(onPressed: () {}, child: const Text("Ingresar")),
-            ],
-          ),
+          Text('Biovision', style: TextStyle(color: Colors.white, fontSize: 20)),
+          TextButton(onPressed: () {}, child: Text("Inicio", style: TextStyle(color: Colors.white))),
+          TextButton(onPressed: () {}, child: Text("Servicios", style: TextStyle(color: Colors.white))),
+          TextButton(onPressed: () {}, child: Text("Contacto", style: TextStyle(color: Colors.white))),
         ],
       ),
     );

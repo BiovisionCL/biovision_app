@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
-import 'features/home/presentation/home_page.dart';
+import 'features/landing/presentation/pages/home_page.dart';
 
 void main() {
-  runApp(const BiovisionApp());
+  runApp(const MyApp());
 }
 
-class BiovisionApp extends StatelessWidget {
-  const BiovisionApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Biovision',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-        useMaterial3: true,
-      ),
-      home: const HomePage(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }

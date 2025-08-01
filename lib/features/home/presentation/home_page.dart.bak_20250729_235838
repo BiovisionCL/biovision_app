@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:biovision_app/core/widgets/navbar.dart';
+import 'package:biovision_app/core/widgets/footer.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/background.jpg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          Column(
+            children: const [
+              Navbar(),
+              Expanded(
+                child: Center(
+                  child: Text(
+                    'Bienvenido a Biovision',
+                    style: TextStyle(fontSize: 28, color: Colors.white),
+                  ),
+                ),
+              ),
+              Footer(),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}

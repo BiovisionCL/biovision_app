@@ -1,3 +1,5 @@
+// @dart=2.17
+// @dart=2.17
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:biovision_app/main.dart';

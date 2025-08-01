@@ -1,22 +1,11 @@
-
-import 'package:flutter_test/flutter_test.dart';
-import 'package:biovision_app/features/home/presentation/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:biovision_app/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test en HomePage', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: HomePage()));
-
-    // Verifica que el contador inicia en 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Simula un tap en el botón "Presióname".
-    await tester.tap(find.text('Presióname'));
-    await tester.pump();
-
-    // Verifica que el contador incrementó a 1.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+  testWidgets('App smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const BiovisionApp());
+    expect(find.byType(MaterialApp), findsOneWidget);
+    expect(find.byType(Scaffold), findsWidgets);
   });
 }
